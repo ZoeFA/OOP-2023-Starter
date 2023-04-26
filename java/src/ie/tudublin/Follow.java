@@ -1,10 +1,11 @@
 package ie.tudublin;
-
+import processing.data.Table;
+import processing.data.TableRow;
 //start of class
 public class Follow {
 
-  String word;
-  int count;
+  private String word;
+  private int count;
 
   //getters and setters
   public String getWord() {
@@ -20,5 +21,12 @@ public class Follow {
     this.count = count;
   }
 
-  
+  //constructor method
+  public Follow(String word, int count){
+
+    this.word = word;
+    this.count = count;
+    
+
+  }
 }

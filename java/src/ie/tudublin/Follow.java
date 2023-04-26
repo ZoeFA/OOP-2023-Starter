@@ -1,11 +1,11 @@
 package ie.tudublin;
-import processing.data.Table;
-import processing.data.TableRow;
-import java.util.ArrayList;
+
+//import java.util.ArrayList;
 
 //start of class
 public class Follow {
 
+  //fields
   private String word;
   private int count;
 

@@ -11,6 +11,15 @@ public class Word {
 
   ArrayList<Follow> follows = new ArrayList<Follow>();
 
+  public ArrayList<Follow> getFollows() {
+    return follows;
+  }
+
+  public void setFollows(ArrayList<Follow> follows) {
+    this.follows = follows;
+  }
+
+  //getters and setters
   public String getWord() {
     return word;
   }
@@ -25,9 +34,15 @@ public class Word {
 
   }
   
+  //accessor method
   public Word(){
 
   }
+
+
+  //constructor
+  //public Word(){
+  //}
 
 
   @Override

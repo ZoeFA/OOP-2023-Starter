@@ -29,4 +29,18 @@ public class Follow {
     
 
   }
+
+  //accessor method
+  public Follow(){
+
+
+  }
+
+
+  //ToString
+  @Override
+    public String toString() {
+      return "i: " + word +"(" + count +")";
+    }
+
 }

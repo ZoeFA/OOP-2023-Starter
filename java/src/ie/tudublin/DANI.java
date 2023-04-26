@@ -34,8 +34,10 @@ public class DANI extends PApplet {
 
 	void loadFile(){
 
-		loadStrings("small.txt"); // Load a text file into a String array
+		String[] words = loadStrings("small.txt"); // Load small.text into a string array
 
+
+		//attempt to load words into the follows array;list
 		for (words word: word.rows()){
 
 			Word word = new Follow(this, word);
@@ -44,6 +46,8 @@ public class DANI extends PApplet {
 		//split(line, ' ');
 
 		//for (TableRow line: table.rows()){
+			//attempt to split the text file into lines
+			//split lines into separate words
 
 		//}
 
@@ -57,7 +61,11 @@ public class DANI extends PApplet {
 
 	void printFile(){
 
-		//print out the words
+
+		//print out the text file
+		System.out.println("small.text");
+
+		//print out the model
 		for (Word word:follows){
 			
 			System.out.println(word);
@@ -79,7 +87,9 @@ public class DANI extends PApplet {
 		background(0);
 		fill(255);
 		noStroke();
+		stroke(255);
 		textSize(20);
+		text("small.text", CENTER, CENTER);
     textAlign(CENTER, CENTER);
         
 	}

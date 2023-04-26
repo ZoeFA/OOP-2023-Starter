@@ -39,7 +39,7 @@ public class Follow {
   }
 
 
-  //ToString
+  //ToString, will print the word and the count
   @Override
     public String toString() {
       return word + count;

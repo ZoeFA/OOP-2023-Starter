@@ -9,6 +9,7 @@ public class Word {
 
   private String word;
 
+  //array list of words which follow another word
   ArrayList<Follow> follows = new ArrayList<Follow>();
 
   public ArrayList<Follow> getFollows() {
@@ -45,9 +46,12 @@ public class Word {
   //}
 
   void findFollow(follows){
-    
+
+    //looks for a word in the model and array of follows to see if it already exists
   }
 
+
+  //ToString method
   @Override
     public String toString() {
       

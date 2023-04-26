@@ -1,6 +1,6 @@
 package ie.tudublin;
 
-import Follow.java;
+//import Follow.java;
 import javax.swing.text.TableView.TableRow;
 import processing.data.Table;
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public class DANI extends PApplet {
 				}
 				else {
 
-					String followingWord = words[i + 1].replaceAll
+					String followingWord = words[i + 1].replaceAll("[^\\w\\s]","").toLowerCase();
 				}
 			}
 		}

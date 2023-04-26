@@ -1,5 +1,6 @@
 package ie.tudublin;
 
+import Follow.java;
 import javax.swing.text.TableView.TableRow;
 import processing.data.Table;
 import java.util.ArrayList;
@@ -34,15 +35,33 @@ public class DANI extends PApplet {
 
 	void loadFile(){
 
-		String[] words = loadStrings("small.txt"); // Load small.text into a string array
+		String[] lines = loadStrings("small.txt"); // Load small.text into a string array
 
+		for (String line : lines) {//for every line
+			
+			String[] words = split(line, ' ');
 
+			for (int i = 0; i < words.length; i++){
+
+				words[i] = words[i].replaceAll("[^\\w\\s]","").toLowerCase();
+
+				if (i == words.length - 1){
+					model.add(new Word(words[i], new ArrayList<Follow>()));
+				}
+				else {
+
+					String followingWord = words[i + 1].replaceAll
+				}
+			}
+		}
+
+		/*
 		//attempt to load words into the follows array;list
 		for (words word: word.rows()){
 
 			Word word = new Follow(this, word);
 			Follow.add(word);
-		}
+		}*/
 		//split(line, ' ');
 
 		//for (TableRow line: table.rows()){

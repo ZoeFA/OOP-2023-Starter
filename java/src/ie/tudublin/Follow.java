@@ -1,6 +1,8 @@
 package ie.tudublin;
 import processing.data.Table;
 import processing.data.TableRow;
+import java.util.ArrayList;
+
 //start of class
 public class Follow {
 
@@ -40,7 +42,7 @@ public class Follow {
   //ToString
   @Override
     public String toString() {
-      return "i: " + word +"(" + count +")";
+      return word + count;
     }
 
 }

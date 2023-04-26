@@ -44,6 +44,9 @@ public class Word {
   //public Word(){
   //}
 
+  void findFollow(follows){
+    
+  }
 
   @Override
     public String toString() {

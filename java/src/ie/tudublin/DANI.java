@@ -35,6 +35,12 @@ public class DANI extends PApplet {
 	void loadFile(){
 
 		loadStrings("small.txt"); // Load a text file into a String array
+
+		for (words word: word.rows()){
+
+			Word word = new Follow(this, word);
+			Follow.add(word);
+		}
 		//split(line, ' ');
 
 		//for (TableRow line: table.rows()){
@@ -58,6 +64,10 @@ public class DANI extends PApplet {
 		}
 	}
 
+	void findWord(String word){
+
+
+	}
 	public void keyPressed() {
 
 	}
